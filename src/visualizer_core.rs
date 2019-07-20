@@ -24,7 +24,6 @@ impl<'a, R: Renderer, S: Source, P: SignalProcessor> VisualizerCore<'a, R, S, P>
         let video_subsystem = sdl_context.video().unwrap();
         let window = video_subsystem
             .window("Audio Visualizer", 800, 600)
-            .opengl()
             .position_centered()
             .build()
             .unwrap();
